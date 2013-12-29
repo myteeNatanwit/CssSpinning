@@ -1,0 +1,56 @@
+<style>
+@-webkit-keyframes rotatingleft {
+    from{
+    -webkit-transform: rotate(0deg);    
+    }
+    to{
+    
+    -webkit-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes rotatingright {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.spinning_right {
+    -webkit-animation: rotatingright 2s linear infinite;
+}
+.spinning_left{
+    -webkit-animation: rotatingleft 2s linear infinite;
+}
+#test:hover{
+   background: green;
+   -webkit-animation: rotatingleft 2s linear infinite;
+}
+#test2 {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 80px;
+    height: 80px;
+    background: brown;
+    
+    margin:20px;
+}
+#test {
+    position: absolute;
+    z-index: 10;
+    top: 140px;
+    left:90px;
+    width: 32px;
+    height: 32px;
+    background: blue;
+    //border-radius : 50%;
+}
+
+
+</style>
+
+<div id='test' class='spinning_left'></div>
+<div id='test2' class='spinning_right'></div>
