@@ -22,35 +22,43 @@
     -webkit-animation: rotatingright 2s linear infinite;
 }
 .spinning_left{
-    -webkit-animation: rotatingleft 2s linear infinite;
+    -webkit-animation: rotatingleft 1s linear infinite;
 }
 #test:hover{
-   background: green;
-   -webkit-animation: rotatingleft 2s linear infinite;
+   -webkit-animation: rotatingright 0.5s linear infinite;
 }
+
+
+.wrapper{
+margin: 60px auto;
+width: 320px;
+height: 580px;
+position: relative;
+}
+
 #test2 {
-    position: absolute;
+    background: url(gear.png) ;
+    background-size: cover;
     top: 100px;
     left: 50px;
-    width: 80px;
-    height: 80px;
-    background: brown;
-    
+    width: 200px;
+    height: 200px;
     margin:20px;
 }
 #test {
     position: absolute;
+    background: url(gear.png) ;
+    background-size: cover;    
     z-index: 10;
-    top: 140px;
-    left:90px;
-    width: 32px;
-    height: 32px;
-    background: blue;
-    //border-radius : 50%;
+    top: 190px;
+    left:120px;
+    width: 100px;
+    height: 100px;
 }
 
 
 </style>
-
-<div id='test' class='spinning_left'></div>
+<div class="wrapper">
+<div id='test' class='spinning_left'> </div>
 <div id='test2' class='spinning_right'></div>
+</div>
